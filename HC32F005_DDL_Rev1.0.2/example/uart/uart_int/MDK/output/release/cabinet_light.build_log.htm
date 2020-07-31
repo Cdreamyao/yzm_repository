@@ -1,0 +1,93 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.15
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 Administrator, 1, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.15.0
+Toolchain Path:  E:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 2 (build 169)
+Assembler:       Armasm.exe V5.05 update 2 (build 169)
+Linker/Locator:  ArmLink.exe V5.05 update 2 (build 169)
+Library Manager: ArmAr.exe V5.05 update 2 (build 169)
+Hex Converter:   FromElf.exe V5.05 update 2 (build 169)
+CPU DLL:         SARMCM3.DLL V5.15.0
+Dialog DLL:      DARMCM1.DLL V1.12.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.15.0_KEIL
+Dialog DLL:      TARMCM1.DLL V1.9.0.0
+ 
+<h2>Project:</h2>
+F:\project\ljc_cabinet_light\7-31\HC32F005_DDL_Rev1.0.2\example\uart\uart_int\MDK\uart_int.uvprojx
+Project File Date:  07/25/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.05 update 2 (build 169)', folder: 'E:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'uart_int_Release'
+compiling main.c...
+..\..\..\..\driver\inc\uart.h(257): warning:  #1295-D: Deprecated declaration uart0_init - give arg types
+  void uart0_init();
+..\..\..\..\driver\inc\uart.h(258): warning:  #1295-D: Deprecated declaration uart1_init - give arg types
+  void uart1_init();
+..\..\..\..\driver\inc\flash.h(141): warning:  #1295-D: Deprecated declaration set_scene_data - give arg types
+  en_result_t set_scene_data();
+..\source\main.c(36): warning:  #1295-D: Deprecated declaration scene_scan - give arg types
+  void scene_scan();
+..\source\main.c(37): warning:  #1295-D: Deprecated declaration set_default_value - give arg types
+  void set_default_value();
+..\source\main.c(38): warning:  #1295-D: Deprecated declaration set_flash_data - give arg types
+  void set_flash_data();
+..\source\main.c(39): warning:  #1295-D: Deprecated declaration get_flash_data - give arg types
+  void get_flash_data();
+..\source\main.c(40): warning:  #1295-D: Deprecated declaration get_scene_data - give arg types
+  void get_scene_data();
+..\source\main.c(41): warning:  #1295-D: Deprecated declaration RF433_read - give arg types
+  void RF433_read();
+..\source\main.c(42): warning:  #1295-D: Deprecated declaration key_scan - give arg types
+  void key_scan();
+..\source\main.c(43): warning:  #1295-D: Deprecated declaration CLK_SET_INIT - give arg types
+  void CLK_SET_INIT();
+..\source\main.c(44): warning:  #1295-D: Deprecated declaration GPIO_INIT - give arg types
+  void GPIO_INIT();
+..\source\main.c(46): warning:  #1295-D: Deprecated declaration get_light_data - give arg types
+  extern void get_light_data();
+..\source\main.c(143): warning:  #186-D: pointless comparison of unsigned integer with zero
+        if(RF433_NUM<0||RF433_NUM>3)
+..\source\main.c(203): warning:  #188-D: enumerated type mixed with another type
+                dp_data.WORK_MODE=Flash_readByte(WORK_MODE_Addr);               
+..\source\main.c: 15 warnings, 0 errors
+compiling bt.c...
+..\..\..\..\driver\src\bt.c(8): warning:  #1295-D: Deprecated declaration light_gra_change - give arg types
+  void light_gra_change();
+..\..\..\..\driver\src\bt.c(9): warning:  #1295-D: Deprecated declaration get_433_value - give arg types
+  void get_433_value();
+..\..\..\..\driver\src\bt.c(1024): warning:  #1-D: last line of file ends without a newline
+  }
+..\..\..\..\driver\src\bt.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=28400 RO-data=424 RW-data=256 ZI-data=2128  
+FromELF: creating hex file...
+".\output\release\cabinet_light.axf" - 0 Error(s), 18 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.3.0.pack
+                ARM::CMSIS:CORE:4.1.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.1.0
+
+<h2>Collection of Component include folders:</h2>
+  F:\project\ljc_cabinet_light\7-31\HC32F005_DDL_Rev1.0.2\example\uart\uart_int\MDK\RTE
+  E:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include
+  E:\Keil_v5\ARM\PACK\HDSC\HC32F005\1.0.1\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.1.0
+</pre>
+</body>
+</html>

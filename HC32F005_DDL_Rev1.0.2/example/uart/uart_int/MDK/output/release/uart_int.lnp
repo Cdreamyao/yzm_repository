@@ -1,0 +1,20 @@
+--cpu Cortex-M0+
+".\output\release\startup_hc32f005.o"
+".\output\release\system_hc32f005.o"
+".\output\release\main.o"
+".\output\release\ddl.o"
+".\output\release\interrupts_hc32f005.o"
+".\output\release\clk.o"
+".\output\release\uart.o"
+".\output\release\bt.o"
+".\output\release\lpm.o"
+".\output\release\gpio.o"
+".\output\release\protocol.o"
+".\output\release\system.o"
+".\output\release\mcu_api.o"
+".\output\release\pca.o"
+".\output\release\adt.o"
+".\output\release\flash.o"
+--strict --scatter ".\output\release\uart_int.sct"
+--keep=*Handler --summary_stderr --info summarysizes --map --load_addr_map_info
+--list ".\output\release\uart_int.map" -o .\output\release\uart_int.axf

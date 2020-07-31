@@ -1,0 +1,65 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.29.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: CHEN CONG, FARYLINK, LIC=8VRKP-MMFGA-018P1-C0TF8-25WIP-99TZB
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.29.0.0
+Toolchain Path:  I:\MDK5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.29.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.2.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Dialog DLL:      TARMCM1.DLL V1.14.1.0
+ 
+<h2>Project:</h2>
+J:\»ª´ó_M0\HC32F005_DDL_Rev1.0.2\HC32F005_DDL_Rev1.0.2\example\uart\uart_int\MDK\uart_int.uvprojx
+Project File Date:  04/30/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'I:\MDK5\ARM\ARMCC\Bin'
+Build target 'uart_int_Release'
+compiling adt.c...
+..\..\..\..\driver\src\adt.c(1973): warning:  #1-D: last line of file ends without a newline
+  }
+..\..\..\..\driver\src\adt.c(1862): warning:  #177-D: variable "stcAdt5CntState"  was declared but never referenced
+  static stc_adt_cntstate_cfg_t stcAdt5CntState;
+..\..\..\..\driver\src\adt.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=25988 RO-data=436 RW-data=208 ZI-data=2120  
+FromELF: creating hex file...
+".\output\release\uart_int.axf" - 0 Error(s), 2 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.6.0.pack
+                ARM.CMSIS.5.6.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.3.0
+
+Package Vendor: HDSC
+                https://raw.githubusercontent.com/hdscmcu/pack/master/HDSC.HC32F005.1.0.1.pack
+                HDSC.HC32F005.1.0.1
+                HC32F005 ARM Cortex-M0+ Device Family Pack
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_uart_int_Release
+  I:\MDK5\ARM\CMSIS\5.6.0\CMSIS\Core\Include
+  I:\MDK5\HDSC\HC32F005\1.0.1\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.3.0
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

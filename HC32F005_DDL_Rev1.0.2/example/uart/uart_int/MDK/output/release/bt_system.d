@@ -1,0 +1,12 @@
+.\output\release\bt_system.o: ..\..\..\..\driver\src\bt_system.c
+.\output\release\bt_system.o: ..\..\..\..\driver\inc\bluetooth.h
+.\output\release\bt_system.o: ..\..\..\..\driver\inc\bt_protocol.h
+.\output\release\bt_system.o: ..\..\..\..\driver\inc\bt_system.h
+.\output\release\bt_system.o: ..\..\..\..\driver\inc\bt_mcu_api.h
+.\output\release\bt_system.o: ..\..\..\..\driver\inc\mcu_ota_handler.h
+.\output\release\bt_system.o: I:\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\release\bt_system.o: ..\..\..\..\driver\inc\bluetooth.h
+.\output\release\bt_system.o: ..\..\..\..\driver\inc\wifi.h
+.\output\release\bt_system.o: ..\..\..\..\driver\inc\protocol.h
+.\output\release\bt_system.o: ..\..\..\..\driver\inc\system.h
+.\output\release\bt_system.o: ..\..\..\..\driver\inc\mcu_api.h
