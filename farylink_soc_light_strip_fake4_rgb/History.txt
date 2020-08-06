@@ -1,0 +1,55 @@
+pid: mg6sgtufiwt9lmwl
+涂鸦新五路demo
+
+        
+2020年3月27日
+添加ap模式配网成功判断
+wfl_timer_cb：
+			case STAT_AP_STA_CFG_UNC://添加的判断
+			case STAT_STA_UNCONN:
+			case STAT_LOW_POWER:
+            
+2020年3月30日
+新旧基线区别：
+旧基线AP配网和STA配网连接成功都会软件复位一次，
+新基线STA配网连接成功会复位，AP配网连接成功不会复位
+影响：
+配网时设置flash_scene_flag = FALSE;AP配网成功后依然flash_scene_flag = FALSE；无法进入flash_scene_change()函数，情景模式下的动态情景不会执行。
+解：
+联网成功后设置flash_scene_flag = TRUE;
+wfl_timer_cb:
+	 if((wf_stat == STAT_STA_UNCONN) || (wf_stat == STAT_AP_STA_CFG_UNC)) {
+	 	PR_DEBUG("config_flag:%d",config_flag);
+	 	if(config_flag == TRUE){
+			config_flag = FALSE;
+			reset_light_sta();
+			flash_scene_flag = TRUE;
+		}
+	    PR_DEBUG("STAT_STA_UNCONN");
+	 }
+
+2020年6月30日
+利嘉城带mic音乐四路灯
+添加红外信号判断，防止连按过程中因为开启保存数据定时器打断连按效果
+device_cb
+	if((!IsThisSysTimerRun(data_save_timer)) && (!IR_RX_BUFF.fill_cnt))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
